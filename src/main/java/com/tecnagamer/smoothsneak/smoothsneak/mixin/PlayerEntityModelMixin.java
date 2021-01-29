@@ -12,6 +12,7 @@ import net.minecraft.entity.LivingEntity;
 
 @Mixin(BipedEntityModel.class)
 public class PlayerEntityModelMixin<T extends LivingEntity> {
+    float arm = 0.1F;
 
     @Shadow
     public ModelPart rightArm;
@@ -29,17 +30,18 @@ public class PlayerEntityModelMixin<T extends LivingEntity> {
     @Shadow public boolean sneaking;
 
     @Inject(method = "setAngles", at = @At("TAIL"))
-    public void changeHandPosition(final CallbackInfo info) {
+
+    public void setAngles(final CallbackInfo info) {
+        float smooth = 0.1F;
+        //arm += smooth;
 
         if (this.sneaking) {
-            System.out.println("Sneaking!");
-            //float arm2 = 1.4F;
-            //arm2 += 0.1F;
-            //float arm = 1.4F;
-            // arm += arm2;
+            arm =+ arm + 1;
+            System.out.println(arm);
+            System.out.println(smooth);
             this.torso.pitch = 0.5F;
-            this.rightArm.pitch += 3.1F;
-            this.leftArm.pitch += 1.1F;
+            this.rightArm.pitch += arm;
+            this.leftArm.pitch += 1.4F;
             this.rightLeg.pivotZ = 4.0F;
             this.leftLeg.pivotZ = 4.0F;
             this.rightLeg.pivotY = 12.2F;
