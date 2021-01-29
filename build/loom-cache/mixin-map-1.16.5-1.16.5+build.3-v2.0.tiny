@@ -6,3 +6,4 @@ FIELD	com/tecnagamer/smoothsneak/smoothsneak/mixin/PlayerEntityModelMixin	Lnet/m
 FIELD	com/tecnagamer/smoothsneak/smoothsneak/mixin/PlayerEntityModelMixin	Lnet/minecraft/client/model/ModelPart;	leftLeg	field_3397
 FIELD	com/tecnagamer/smoothsneak/smoothsneak/mixin/PlayerEntityModelMixin	Lnet/minecraft/client/model/ModelPart;	head	field_3398
 FIELD	com/tecnagamer/smoothsneak/smoothsneak/mixin/PlayerEntityModelMixin	Z	sneaking	field_3400
+FIELD	com/tecnagamer/smoothsneak/smoothsneak/mixin/PlayerEntityModelMixin	Lnet/minecraft/client/model/ModelPart;	helmet	field_3394

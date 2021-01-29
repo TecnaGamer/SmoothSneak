@@ -25,9 +25,9 @@ fovEffectScale:1.0
 gamma:1.0
 renderDistance:11
 entityDistanceScaling:1.0
-guiScale:0
+guiScale:2
 particles:0
-maxFps:120
+maxFps:260
 difficulty:2
 graphicsMode:1
 ao:2
@@ -44,7 +44,7 @@ textBackgroundOpacity:0.5
 backgroundForChatOnly:true
 hideServerAddress:false
 advancedItemTooltips:false
-pauseOnLostFocus:true
+pauseOnLostFocus:false
 overrideWidth:0
 overrideHeight:0
 heldItemTooltips:true
@@ -64,7 +64,7 @@ rawMouseInput:true
 glDebugVerbosity:1
 skipMultiplayerWarning:true
 hideMatchedNames:true
-joinedFirstServer:false
+joinedFirstServer:true
 syncChunkWrites:false
 key_key.attack:key.mouse.left
 key_key.use:key.mouse.right
