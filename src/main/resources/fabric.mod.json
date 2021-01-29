@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "smoothsneak",
+  "version": "${version}",
+  "name": "SmoothSneak",
+  "description": "Makes the sneaking animation smoother",
+  "authors": [
+    "TecnaGamer"
+  ],
+  "contact": {
+    "website": "www.tecnagamer.com",
+    "repo": "https://github.com/TecnaGamer/SmoothSneak"
+  },
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.tecnagamer.smoothsneak.smoothsneak.client.SmoothsneakClient"
+    ],
+    "main": [
+      "com.tecnagamer.smoothsneak.smoothsneak.Smoothsneak"
+    ]
+  },
+  "mixins": [
+    "smoothsneak.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.1",
+    "fabric": "*",
+    "minecraft": "1.16.x"
+  }
+}

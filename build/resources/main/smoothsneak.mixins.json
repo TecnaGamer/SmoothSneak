@@ -1,0 +1,15 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "com.tecnagamer.smoothsneak.smoothsneak.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "mixins": [
+    "MixenMinecraft",
+    "PlayerEntityModelMixin"
+  ],
+  "client": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

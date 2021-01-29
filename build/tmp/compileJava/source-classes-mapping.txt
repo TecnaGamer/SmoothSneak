@@ -1,0 +1,14 @@
+me/i509/fabric/libbipedmodel/mixin/BipedEntityModelMixin.java
+ me.i509.fabric.libbipedmodel.mixin.BipedEntityModelMixin
+com/tecnagamer/smoothsneak/smoothsneak/client/SmoothsneakClient.java
+ com.tecnagamer.smoothsneak.smoothsneak.client.SmoothsneakClient
+me/i509/fabric/libbipedmodel/LibBipedModel.java
+ me.i509.fabric.libbipedmodel.LibBipedModel
+me/i509/fabric/libbipedmodel/BipedModelCallback.java
+ me.i509.fabric.libbipedmodel.BipedModelCallback
+com/tecnagamer/smoothsneak/smoothsneak/mixin/PlayerEntityModelMixin.java
+ com.tecnagamer.smoothsneak.smoothsneak.mixin.PlayerEntityModelMixin
+com/tecnagamer/smoothsneak/smoothsneak/Smoothsneak.java
+ com.tecnagamer.smoothsneak.smoothsneak.Smoothsneak
+com/tecnagamer/smoothsneak/smoothsneak/mixin/MixenMinecraft.java
+ com.tecnagamer.smoothsneak.smoothsneak.mixin.MixenMinecraft

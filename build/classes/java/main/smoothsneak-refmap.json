@@ -1,0 +1,28 @@
+{
+  "mappings": {
+    "com/tecnagamer/smoothsneak/smoothsneak/mixin/PlayerEntityModelMixin": {
+      "setAngles": "Lnet/minecraft/class_572;method_17087(Lnet/minecraft/class_1309;FFFFF)V"
+    },
+    "me/i509/fabric/libbipedmodel/mixin/BipedEntityModelMixin": {
+      "Lnet/minecraft/client/render/entity/model/BipedEntityModel;handSwingProgress:F": "Lnet/minecraft/class_572;field_3447:F",
+      "setAngles(Lnet/minecraft/entity/LivingEntity;FFFFF)V": "Lnet/minecraft/class_572;method_17087(Lnet/minecraft/class_1309;FFFFF)V"
+    },
+    "com/tecnagamer/smoothsneak/smoothsneak/mixin/MixenMinecraft": {
+      "tick": "Lnet/minecraft/class_310;method_1574()V"
+    }
+  },
+  "data": {
+    "named:intermediary": {
+      "com/tecnagamer/smoothsneak/smoothsneak/mixin/PlayerEntityModelMixin": {
+        "setAngles": "Lnet/minecraft/class_572;method_17087(Lnet/minecraft/class_1309;FFFFF)V"
+      },
+      "me/i509/fabric/libbipedmodel/mixin/BipedEntityModelMixin": {
+        "Lnet/minecraft/client/render/entity/model/BipedEntityModel;handSwingProgress:F": "Lnet/minecraft/class_572;field_3447:F",
+        "setAngles(Lnet/minecraft/entity/LivingEntity;FFFFF)V": "Lnet/minecraft/class_572;method_17087(Lnet/minecraft/class_1309;FFFFF)V"
+      },
+      "com/tecnagamer/smoothsneak/smoothsneak/mixin/MixenMinecraft": {
+        "tick": "Lnet/minecraft/class_310;method_1574()V"
+      }
+    }
+  }
+}

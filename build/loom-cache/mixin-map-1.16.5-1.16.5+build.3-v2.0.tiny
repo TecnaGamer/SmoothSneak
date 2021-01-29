@@ -1,0 +1,8 @@
+v1	named	intermediary
+FIELD	com/tecnagamer/smoothsneak/smoothsneak/mixin/PlayerEntityModelMixin	Lnet/minecraft/client/model/ModelPart;	rightArm	field_3401
+FIELD	com/tecnagamer/smoothsneak/smoothsneak/mixin/PlayerEntityModelMixin	Lnet/minecraft/client/model/ModelPart;	leftArm	field_3390
+FIELD	com/tecnagamer/smoothsneak/smoothsneak/mixin/PlayerEntityModelMixin	Lnet/minecraft/client/model/ModelPart;	torso	field_3391
+FIELD	com/tecnagamer/smoothsneak/smoothsneak/mixin/PlayerEntityModelMixin	Lnet/minecraft/client/model/ModelPart;	rightLeg	field_3392
+FIELD	com/tecnagamer/smoothsneak/smoothsneak/mixin/PlayerEntityModelMixin	Lnet/minecraft/client/model/ModelPart;	leftLeg	field_3397
+FIELD	com/tecnagamer/smoothsneak/smoothsneak/mixin/PlayerEntityModelMixin	Lnet/minecraft/client/model/ModelPart;	head	field_3398
+FIELD	com/tecnagamer/smoothsneak/smoothsneak/mixin/PlayerEntityModelMixin	Z	sneaking	field_3400
