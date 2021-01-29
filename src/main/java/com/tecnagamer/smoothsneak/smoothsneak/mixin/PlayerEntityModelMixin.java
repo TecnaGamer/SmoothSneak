@@ -12,7 +12,8 @@ import net.minecraft.entity.LivingEntity;
 
 @Mixin(BipedEntityModel.class)
 public class PlayerEntityModelMixin<T extends LivingEntity> {
-    float arm = 0.1F;
+    float chest = 0.0F;
+    float arm = 0.5F;
 
     @Shadow
     public ModelPart rightArm;
@@ -32,25 +33,28 @@ public class PlayerEntityModelMixin<T extends LivingEntity> {
     @Inject(method = "setAngles", at = @At("TAIL"))
 
     public void setAngles(final CallbackInfo info) {
-        float smooth = 0.1F;
+       // float smooth = 0.1F;
         //arm += smooth;
 
         if (this.sneaking) {
-            arm =+ arm + 1;
-            System.out.println(arm);
-            System.out.println(smooth);
-            this.torso.pitch = 0.5F;
-            this.rightArm.pitch += arm;
-            this.leftArm.pitch += 1.4F;
+            arm = 10.0F;
+            chest += 0.01F;
+            System.out.println(chest);
+          //  System.out.println(smooth);
+            this.torso.pitch = chest;
+            this.rightArm.pitch += 0.0F;
+            //this.leftArm.pitch += 0.0F;
             this.rightLeg.pivotZ = 4.0F;
             this.leftLeg.pivotZ = 4.0F;
             this.rightLeg.pivotY = 12.2F;
             this.leftLeg.pivotY = 12.2F;
             this.head.pivotY = 4.2F;
             this.torso.pivotY = 3.2F;
-            this.leftArm.pivotY = 5.2F;
+            //this.leftArm.pivotY = 5.2F;
             this.rightArm.pivotY = 5.2F;
         } else {
+            arm = 0.5F;
+            chest = 0.0F;
             this.torso.pitch = 0.0F;
             this.rightLeg.pivotZ = 0.1F;
             this.leftLeg.pivotZ = 0.1F;
@@ -58,9 +62,11 @@ public class PlayerEntityModelMixin<T extends LivingEntity> {
             this.leftLeg.pivotY = 12.0F;
             this.head.pivotY = 0.0F;
             this.torso.pivotY = 0.0F;
-            this.leftArm.pivotY = 1.0F;
+            //this.leftArm.pivotY = 1.0F;
             this.rightArm.pivotY = 2.0F;
         }
+            this.leftArm.pitch = arm;
+            this.leftArm.pivotY = arm;
 
     }
 
